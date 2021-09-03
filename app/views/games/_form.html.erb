@@ -23,17 +23,17 @@
 
   <div class="field">
     <%= form.label :cover_image %>
-    <%= form.file_field :cover_image %>
+    <%= form.file_field :cover_image, accept: ['image/png, image/jpg, image/jpeg'] %>
   </div>
 
   <div class="field">
     <%= form.label :pieces_images %>
-    <%= form.file_field :pieces_images, multiple: true %>
+    <%= form.file_field :pieces_images, multiple: true, accept: ['image/png, image/jpg, image/jpeg'] %>
   </div>
 
   <div class="field">
     <%= form.label :pdf_rules %>
-    <%= form.file_field :pdf_rules %>
+    <%= form.file_field :pdf_rules, accept: 'application/pdf'%>
   </div>
 
   <div class="actions">
